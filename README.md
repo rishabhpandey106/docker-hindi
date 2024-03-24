@@ -28,16 +28,16 @@
 
    ![Docker Architecture](https://docs.docker.com/get-started/images/docker-architecture.webp)
    - docker waise client-server achitecture use krta h. docker client sabse phle docker daemon se contact krta h joki normally sare heavy tasks jaise building, distributions etc sambhalta hai.
-   docker client ___(docker)___ and docker daemon REST api use krte h connections ke liye.
-   - ab docker daemon ___(dockerd)___ listen krta h sare docker api requests ko aur manage bhi karta h docker images/containers ko.
+   docker client __(docker)__ and docker daemon REST api use krte h connections ke liye.
+   - ab docker daemon __(dockerd)__ listen krta h sare docker api requests ko aur manage bhi karta h docker images/containers ko.
    
-   - suppose aapne ___"docker run"___ command likha to sabse phle client phle command ko docker daemon ke pas bhejta h joki use execue krta h.
+   - suppose aapne __"docker run"__ command likha to sabse phle client phle command ko docker daemon ke pas bhejta h joki use execue krta h.
    - ek docker client kayi docker daemon se communicate kar sakta h.
    
-   - ___docker deskop___ ek gui application h jisse docker daemon , contaner , images etc install hote h aapke local pc pe aur is application k madad se aap manage bhi kar sakte h apne docker container/volumes/images ko aasani se.
+   - __docker deskop__ ek gui application h jisse docker daemon , contaner , images etc install hote h aapke local pc pe aur is application k madad se aap manage bhi kar sakte h apne docker container/volumes/images ko aasani se.
    
-   - ___docker registries___ store karti h docker images ko.
-   - ___docker hub___ bilkul hithub h pr docker images ka like agar ham koi image run krte h aur wo install nhi h to wo automatic docker hub se install ho jata h.
+   - __docker registries__ store karti h docker images ko.
+   - __docker hub__ bilkul hithub h pr docker images ka like agar ham koi image run krte h aur wo install nhi h to wo automatic docker hub se install ho jata h.
 
 5. **Docker Containers**
 
@@ -54,5 +54,5 @@
 
    - image ek instructions se bhara read only template hota h jisse docker container create hote h.
    - aksar ek image kisi dusre image pe based hota h like aap koi image build kr skte jo ki ubuntu image pe based ho aur aap uspe apache web server ya busybox install kare.
-   - like docker images ko banane ke liye hm Dockerfile file ka use karte h jisme likha har command image me ek layer create krta h. 
-   - agar ham Dockerfile me kuch bhi change ya update karte h aur image ko rebuild karte h to sirf whi layer phir se run hote h jinme kuch change hota h isliye docker images bhut fast aur lightweight hote h.
+   - like docker images ko banane ke liye hm __Dockerfile__ file ka use karte h jisme likha har command image me ek layer create krta h. 
+   - agar ham __Dockerfile__ me kuch bhi change ya update karte h aur image ko rebuild karte h to sirf whi layer phir se run hote h jinme kuch change hota h isliye docker images bhut __fast__ aur lightweight hote h.
