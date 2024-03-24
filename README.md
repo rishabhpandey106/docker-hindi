@@ -23,3 +23,18 @@
 
    like agar layman language me bolu to hame docker engine ki jrurt padti h jo ki alg-alg containers banata krta h jiske andar hame kya tech stack use krna kya os use krna h etc install krte h images k form me jo har container k andar images installed hote h jo ki aapke host/original config pe asar nhi krte nahi uspe depended rahte h (ha space pe depended rahte h as jo images ham install krte h ho kbhi kbhar kafo sapce consume krte h).
      To agar 4 log milke ek project bana rhe h to phle hi docker container bna lete h phir uske andar apne hisab se images install krke project ko bnate h taki sabk config. same rahe aur kisi ko dikkat na ho.
+
+4. **Docker Architecture?**
+
+   ![Docker Architecture](https://docs.docker.com/get-started/images/docker-architecture.webp)
+   - docker waise client-server achitecture use krta h. docker client sabse phle docker daemon se contact krta h joki normally sare heavy tasks jaise building, distributions etc sambhalta hai.
+   docker client ___(docker)___ and docker daemon REST api use krte h connections ke liye.
+   - ab docker daemon ___(dockerd)___ listen krta h sare docker api requests ko aur manage bhi karta h docker images/containers ko.
+   
+   - suppose aapne ___"docker run"___ command likha to sabse phle client phle command ko docker daemon ke pas bhejta h joki use execue krta h.
+   - ek docker client kayi docker daemon se communicate kar sakta h.
+   
+   - ___docker deskop___ ek gui application h jisse docker daemon , contaner , images etc install hote h aapke local pc pe aur is application k madad se aap manage bhi kar sakte h apne docker container/volumes/images ko aasani se.
+   
+   - ___docker registries___ store karti h docker images ko.
+   - ___docker hub___ bilkul hithub h pr docker images ka like agar ham koi image run krte h aur wo install nhi h to wo automatic docker hub se install ho jata h.
