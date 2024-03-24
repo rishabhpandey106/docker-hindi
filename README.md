@@ -1,4 +1,4 @@
-# docker
+# Docker
 1. **What's Docker?**
 
    Docker ek platform hai jisse aap applications develop, ship, aur run kar sakte hain. Docker aapko aapke applications ko aapke infrastructure se alag rakhne ki suvidha deta hai, jisse aap software ko tezi se deliver kar sakte hain. Docker ke madhyam se aap apne infrastructure ko waise hi manage kar sakte hain jaise aap aapke applications ko manage karte hain. Docker ke methodologies ka istemal karke aap code ko ship, test, aur deploy karne mein delay ko kam kar sakte hain, jisse code likhne aur use production mein chalane mein kam samay lagta hai.
@@ -38,3 +38,21 @@
    
    - ___docker registries___ store karti h docker images ko.
    - ___docker hub___ bilkul hithub h pr docker images ka like agar ham koi image run krte h aur wo install nhi h to wo automatic docker hub se install ho jata h.
+
+5. **Docker Containers**
+
+   - jaise aapne oops me pda hai ki objects are instance of class usi tarah container runnable instance hote h images ke. in containers ke andar hi docker images instal hote h.
+   - containers generally dusre containers aur host machine se bilkul isolated hote h.
+   - agar aap containers ko delete karte hai to uske andar ke images ya sara data , states sab delete ho jata h par aap use restore kar sakte h agar aap persistent volumes ka use kare data store krne k liye like kubernetes.
+
+      - `docker run -it ubuntu`
+
+   - agar aap is command ko run kre to docker ek ubuntu (image) wale container ko run krega.
+   - docker generally hmesa new containers create krta h jb bhi aap specific kisi container ka nam ya unique id deke na run kre command to.
+
+6. **Docker Images**
+
+   - image ek instructions se bhara read only template hota h jisse docker container create hote h.
+   - aksar ek image kisi dusre image pe based hota h like aap koi image build kr skte jo ki ubuntu image pe based ho aur aap uspe apache web server ya busybox install kare.
+   - like docker images ko banane ke liye hm Dockerfile file ka use karte h jisme likha har command image me ek layer create krta h. 
+   - agar ham Dockerfile me kuch bhi change ya update karte h aur image ko rebuild karte h to sirf whi layer phir se run hote h jinme kuch change hota h isliye docker images bhut fast aur lightweight hote h.
