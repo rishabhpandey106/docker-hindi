@@ -56,3 +56,15 @@
    - aksar ek image kisi dusre image pe based hota h like aap koi image build kr skte jo ki ubuntu image pe based ho aur aap uspe apache web server ya busybox install kare.
    - like docker images ko banane ke liye hm __Dockerfile__ file ka use karte h jisme likha har command image me ek layer create krta h. 
    - agar ham __Dockerfile__ me kuch bhi change ya update karte h aur image ko rebuild karte h to sirf whi layer phir se run hote h jinme kuch change hota h isliye docker images bhut __fast__ aur lightweight hote h.
+
+7. **Docker Installation**
+   - sabse phle docker desktop download krna h official website se according to your os.
+   ![docker download](./public/docker%20download.jpeg)
+   - uske baad docker ko install krne k baad use open krna hai.
+   ![docker run](./public/docker%20search.png)
+   - uske baad aapko kuch aisa dikhega ki docker setup ho rha h. uske baad turant docker kul jatega.docker aapke system tray menu me bhi chla jata h open krne k baad.
+   ![docker open](./public/docker%20first%20open.png)
+   - uske baad check kr skte h ki docker install hua h ya n to phle command prompt open kr le aur usme __docker__ ya __docker -v__ run kre.
+   ![docker cmd](./public/version%20check.png)
+   - to aapko agar kuch aisa dikh rha h to congrats aap ke pc me docker install ho chuka h. aap chahe to kisi image ko pull krke bhi dekh skte h.
+   ![docker result](./public/result.png)
