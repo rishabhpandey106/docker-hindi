@@ -1,9 +1,20 @@
 # Docker
-1. **What's Docker?**
+
+## Table of Contents
+   - [What's Docker](#whats-docker)
+   - [Why do we need Docker?](#why-do-we-need-docker)
+   - [How does Docker work?](#how-does-docker-work)
+   - [Docker Architecture?](#docker-architecture)
+   - [Docker Containers](#docker-containers)
+   - [Docker Images](#docker-images)
+   - [Docker Installation](#docker-installation)
+   - [Docker Command Line Interface](#docker-command-line-interface)
+
+## **What's Docker?**
 
    Docker ek platform hai jisse aap applications develop, ship, aur run kar sakte hain. Docker aapko aapke applications ko aapke infrastructure se alag rakhne ki suvidha deta hai, jisse aap software ko tezi se deliver kar sakte hain. Docker ke madhyam se aap apne infrastructure ko waise hi manage kar sakte hain jaise aap aapke applications ko manage karte hain. Docker ke methodologies ka istemal karke aap code ko ship, test, aur deploy karne mein delay ko kam kar sakte hain, jisse code likhne aur use production mein chalane mein kam samay lagta hai.
 
-2. **Why do we need Docker?**
+## **Why do we need Docker?**
 
    - Like agar aap kisi company me developer ho aur man lo aapne ek project bnaya pr ab aap project bada ho gya h or suppose company ne aur bande allot kr diye ki aap bhi isi project pe kam kro to maan lo aapne project bnaya tha kuch apni configuration pe like -
 
@@ -19,12 +30,12 @@
 
      in conditions se bachne ke liye docker use krte h. 
 
-3. **How does Docker work?**
+## **How does Docker work?**
 
    like agar layman language me bolu to hame docker engine ki jrurt padti h jo ki alg-alg containers banata krta h jiske andar hame kya tech stack use krna kya os use krna h etc install krte h images k form me jo har container k andar images installed hote h jo ki aapke host/original config pe asar nhi krte nahi uspe depended rahte h (ha space pe depended rahte h as jo images ham install krte h ho kbhi kbhar kafo sapce consume krte h).
      To agar 4 log milke ek project bana rhe h to phle hi docker container bna lete h phir uske andar apne hisab se images install krke project ko bnate h taki sabk config. same rahe aur kisi ko dikkat na ho.
 
-4. **Docker Architecture?**
+## **Docker Architecture?**
 
    ![Docker Architecture](https://docs.docker.com/get-started/images/docker-architecture.webp)
    - docker waise client-server achitecture use krta h. docker client sabse phle docker daemon se contact krta h joki normally sare heavy tasks jaise building, distributions etc sambhalta hai.
@@ -39,7 +50,7 @@
    - __docker registries__ store karti h docker images ko.
    - __docker hub__ bilkul hithub h pr docker images ka like agar ham koi image run krte h aur wo install nhi h to wo automatic docker hub se install ho jata h.
 
-5. **Docker Containers**
+## **Docker Containers**
 
    - jaise aapne oops me pda hai ki objects are instance of class usi tarah container runnable instance hote h images ke. in containers ke andar hi docker images instal hote h.
    - containers generally dusre containers aur host machine se bilkul isolated hote h.
@@ -50,14 +61,14 @@
    - agar aap is command ko run kre to docker ek ubuntu (image) wale container ko run krega.
    - docker generally hmesa new containers create krta h jb bhi aap specific kisi container ka nam ya unique id deke na run kre command to.
 
-6. **Docker Images**
+## **Docker Images**
 
    - image ek instructions se bhara read only template hota h jisse docker container create hote h.
    - aksar ek image kisi dusre image pe based hota h like aap koi image build kr skte jo ki ubuntu image pe based ho aur aap uspe apache web server ya busybox install kare.
    - like docker images ko banane ke liye hm __Dockerfile__ file ka use karte h jisme likha har command image me ek layer create krta h. 
    - agar ham __Dockerfile__ me kuch bhi change ya update karte h aur image ko rebuild karte h to sirf whi layer phir se run hote h jinme kuch change hota h isliye docker images bhut __fast__ aur lightweight hote h.
 
-7. **Docker Installation**
+## **Docker Installation**
    - sabse phle docker desktop download krna h official website se according to your os.
      
    ![docker download](./public/docker%20download.jpeg)
@@ -74,7 +85,7 @@
      
    ![docker result](./public/result.png)
 
-8. **Docker Command Line Interface**
+## **Docker Command Line Interface**
 
    - to ab sikhenge kuch commands joki docker me use hote h. ab aap sochenge hm sara kam docker desktop se hi kr le cli ki kya jrurt but jrurt h.production level pe aapko gui n milega wha p sblog cli ka hi use krte h to kuch general commands to sikhne hi pdenge.
 
