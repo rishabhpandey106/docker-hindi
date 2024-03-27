@@ -68,3 +68,44 @@
    ![docker cmd](./public/version%20check.png)
    - to aapko agar kuch aisa dikh rha h to congrats aap ke pc me docker install ho chuka h. aap chahe to kisi image ko pull krke bhi dekh skte h.
    ![docker result](./public/result.png)
+
+8. **Docker Command Line Interface**
+
+   - to ab sikhenge kuch commands joki docker me use hote h. ab aap sochenge hm sara kam docker desktop se hi kr le cli ki kya jrurt but jrurt h.production level pe aapko gui n milega wha p sblog cli ka hi use krte h to kuch general commands to sikhne hi pdenge.
+
+   - sabse phle docker engine on kr le uske cmd/terminal khol ke kuch commands enter kre.
+
+   - like agar aap "docker image" likhenge to help section khuelega jo suggest krega ki aap kya kya commands use kr skte h docker images ke aage like aap image me dekh skte h. usme se koi bhi command aap likh k try kr skte h aur kis command se kya hota h wo bhi likha h.
+
+   ![docker image cli](./public/docker%20image%20cli.png)
+
+   - agar aap "docker images" likhenge to apke docker me current jitne images installed honge wo terminal me tabular form me show honge like -
+
+   ![docker images](./public/docker%20images%20cli.png)
+
+   (agar aapke me koi bhi image installed n hoga to wo table empty show hoga mtlb wha kuch show nhi hoga)
+
+   - like maine abhi "docker image pull {image_name}" command ka use kiya jaise -
+
+   ![docker busybox image](./public/docker%20busybox%20image.png)
+
+   - to yha pe busybox nam ka image install hua aur phir se hmne docker images run kiya to ab 2 images show ho rhe.
+   same hm agar "docker container" command run kre to wo help section me kyi sare commands suggest krega like -
+
+   ![docker container cli](./public/docker%20container%20cli.png)
+
+   - sabse phle maine "docker container ls" kiya joki sare active container dikha dega lekin aap dekhoge ki abhi currently koi bhi container run n ho rha isliye empty hai result , lekin agar command ke aage"-a" lga de jisse "docker container ls -a" ho jaye to sare ke sare containers show honge.
+   abhi uske baad maine "docker run busybox" kiya to ek aur container bn gya busybox ka to "docker container ls -a" krne pe ab 2 container show ho rhe h.
+
+   ![docker cli](./public/docker%20cli.png)
+
+   - ab aap "docker container kill {container id or container name}" command se docker container ko stop kr skte h aur phir "docker container prune" se sare stopped container remove ho jate h aur agar aap kisi specific container ko delete krna chahte hai to "docker container rm {container id or container name}" command ka bhi use kr skte h.
+
+   - ek aur command kafi useful hai "docker run -it {image name}" isme kyi baar hm log "-it" ki jgh "-i -t" bhi use krte h dono same hai , isme -i ka kam interactive banana aur -t se image ka terminal hmare terminal pe copy ho jata h. 
+   like aap upr wale image me jb hmne busybox image ko run kiya to wo sidha run hua aue exit uske andr kuch show n hua lekin agar hm "-it" wala command dale to - 
+
+   ![docker run -it cli](./public/docker%20run%20-it%20cli.png)
+
+   - iske andr aap directly busybox ke terminal me chle gye aur "whoami" aur "ls" jaise ubuntu ke commands run kiye kyoki busybox bhi ubuntu pe upr based h. (iske bare docker images me baat hui h)
+
+   - baki aage hum dheere dheere aur bhi commands sikhenge aur try krenge tbtk itner commands pe command bnaiye aur baki ke commands khud try kre!
