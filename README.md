@@ -12,6 +12,9 @@
 
 ## **What's Docker?**
 
+   Docker ek set of PaaS (platform as a Service) products  hai joki OS-level virtualization ka use krke softwares ko packages me provide karata hai jise hum log containers bolte hai.
+   Jaise koi VM aapko virtual machines ko kisi bhi hardware pe run krata h waise hi docker aapke applications ko kisi bhi operating systems pe run krata h. Docker ki khudki apni file system , process aur network capabilities hoti hai.
+
    Docker ek platform hai jisse aap applications develop, ship, aur run kar sakte hain. Docker aapko aapke applications ko aapke infrastructure se alag rakhne ki suvidha deta hai, jisse aap software ko tezi se deliver kar sakte hain. Docker ke madhyam se aap apne infrastructure ko waise hi manage kar sakte hain jaise aap aapke applications ko manage karte hain. Docker ke methodologies ka istemal karke aap code ko ship, test, aur deploy karne mein delay ko kam kar sakte hain, jisse code likhne aur use production mein chalane mein kam samay lagta hai.
 
 ## **Why do we need Docker?**
